@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show', as: :dashboard
 
   resources :users, only: %i[create]
+  resources :profiles, only: %i[new]
 end
