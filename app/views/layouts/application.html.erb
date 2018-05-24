@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <%= render partial: 'layouts/navbar' %>
     <% unless flash.empty? %>
       <div class="flash">
         <% flash.each do |type, message| %>
