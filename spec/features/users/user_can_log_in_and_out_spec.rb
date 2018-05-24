@@ -25,6 +25,21 @@ feature 'User sessions' do
 
   context 'when logged in' do
     scenario 'a user can log out' do
+      user = create(:user)
+
+      visit login_path
+
+      fill_in 'email', with: user.email
+      fill_in 'password', with: 'password'
+
+      click_on 'Log In'
+
+      expect(current_path).to eq(dashboard_path)
+
+      click_on 'Log Out'
+
+      expect(current_path).to eq(root_path)
+      expect(page).to have_content('Successfully logged out')
     end
   end
 end
