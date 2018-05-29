@@ -6,8 +6,10 @@ feature 'A logged in User' do
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
+    response = File.read('./spec/fixtures/json/mixed_survey.json')
+
     stub_request(:post, 'https://apiv2.indico.io/political/batch')
-      .to_return(body: './spec/fixtures/json/liberal_survey.json')
+      .to_return(body: response)
 
     visit new_user_profile_path(user)
 
