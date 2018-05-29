@@ -14,8 +14,8 @@ feature 'On the Dashboard Page' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
       visit '/dashboard'
 
-      expect(page).to have_content('Profile Information')
-      expect(page).to have_content('Your summary:')
+      expect(page).to have_content('Political Profile:')
+      expect(page).to have_content('Your political types:')
       expect(page).to have_content('Liberal: 46.0%')
     end
   end
