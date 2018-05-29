@@ -14,14 +14,15 @@ feature 'A logged in User' do
     visit new_user_profile_path(user)
 
     select 'This is a liberal response', from: 'question_1'
-    select 'This is a liberal response', from: 'question_2'
+    select 'This is a liberal conservative response', from: 'question_2'
 
     click_on 'Submit'
 
     expect(current_path).to eq('/dashboard')
     within '.profile' do
-      expect(page).to have_content('You agree most with:')
-      expect(page).to have_content('Solid Liberals')
+      expect(page).to have_content('Your summary:')
+      expect(page).to have_content('Liberal: 46.0%')
+      expect(page).to have_content('Conservative: 26.0%')
     end
   end
 end

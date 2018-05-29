@@ -29,7 +29,7 @@ describe ProfileBuilder do
       stub_request(:post, 'https://apiv2.indico.io/political/batch')
         .to_return(body: response)
 
-      expected = { overall: { Liberal: 0.46, Conservative: 0.26 }}
+      expected = { overall: "{\"Liberal\":0.46,\"Conservative\":0.26}"}
 
       expect(subject.results).to eq(expected)
     end

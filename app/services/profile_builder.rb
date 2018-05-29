@@ -7,7 +7,7 @@ class ProfileBuilder
 
   def results
     raw_results = @service.analyze[:results]
-    {overall: profile_summary(raw_results)}
+    {overall: profile_summary(raw_results).to_json}
   end
 
   private
