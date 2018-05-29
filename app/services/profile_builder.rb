@@ -6,6 +6,18 @@ class ProfileBuilder
   end
 
   def results
-    @service.analyze
+    raw_results = @service.analyze[:results]
+    {overall: profile_summary(raw_results)}
+  end
+
+  private
+
+  def profile_summary(raw_results)
+    raw_results.reduce(Hash.new(0)) do |summary, question|
+      question.each do |key, value|
+        summary[key] += (value * ( 1.0 / raw_results.length )).round(2)
+      end
+      summary
+    end
   end
 end
