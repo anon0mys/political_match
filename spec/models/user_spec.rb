@@ -7,4 +7,8 @@ describe User do
     it { should validate_presence_of :password_digest }
     it { should validate_confirmation_of :password_digest }
   end
+
+  describe 'relationships' do
+    it { should have_one :profile }
+  end
 end

@@ -1,3 +1,11 @@
 <h3>Welcome, <%= @user.name %></h3>
 
-<%= button_to 'Create Your Profile', new_profile_path, method: :get %>
+<div class="profile">
+  <h2>Profile Information:</h2>
+  <% if @user.profile.nil? %>
+    <%= button_to 'Create Your Profile', new_user_profile_path(@user), method: :get %>
+  <% else %>
+    <h3>Your summary:</h3>
+    <%= render partial: 'profiles/summary' %>
+  <% end %>
+</div>

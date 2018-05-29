@@ -1,0 +1,11 @@
+<%= form_tag user_profiles_path(@user), method: :post do %>
+  <%= label_tag 'question_1' %>
+  <%= select_tag 'question_1', options_for_select(
+    ['This is a liberal response',
+     'This is a conservative response']) %>
+  <%= select_tag 'question_2', options_for_select(
+    ['This is a liberal response',
+     'This is a liberal conservative response',
+     'This is a conservative response']) %>
+  <%= submit_tag 'Submit' %>
+<% end %>
