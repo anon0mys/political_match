@@ -1,7 +1,6 @@
 FactoryBot.define do
   factory :profile do
-    user
-    gender "MyString"
-    
+    user nil
+    type 1
   end
 end
