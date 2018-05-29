@@ -1,5 +1,6 @@
 <header class='header'>
   <%= link_to 'Logo', root_path %>
+  <%= link_to 'Political Match', root_path, class: 'site-title' %>
   <% if current_user %>
     <%= link_to 'Log Out', logout_path, method: :delete %>
   <% else %>
