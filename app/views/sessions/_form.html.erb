@@ -1,0 +1,15 @@
+<%= form_tag login_path, {class: 'login-form'} do %>
+  <div class="form-group">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, nil, {class: 'form-control', placeholder: 'your@email.com'} %>
+  </div>
+
+  <div class="form_group">
+    <%= label_tag :password %>
+    <%= password_field_tag :password, nil, {class: 'form-control', placeholder: 'password'} %>
+  </div>
+
+  <div class="form-button">
+    <%= submit_tag "Log In", class: 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -16,7 +16,9 @@ feature 'User sessions' do
       fill_in 'email', with: user.email
       fill_in 'password', with: 'password'
 
-      click_on 'Log In'
+      within '.login-form' do
+        click_on 'Log In'
+      end
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content("Welcome, #{user.name}")
@@ -32,7 +34,9 @@ feature 'User sessions' do
       fill_in 'email', with: user.email
       fill_in 'password', with: 'password'
 
-      click_on 'Log In'
+      within '.login-form' do
+        click_on 'Log In'
+      end
 
       expect(current_path).to eq(dashboard_path)
 
