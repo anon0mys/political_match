@@ -1,3 +1,5 @@
-<% @profile.each do |key, value| %>
-  <%= "#{key}: #{value * 100}%" %>
-<% end %>
+<ul>
+  <% @profile.each do |key, value| %>
+    <li><%= "#{key}: #{value * 100}%" %></li>
+  <% end %>
+</ul>
