@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_31_193236) do
+ActiveRecord::Schema.define(version: 2018_05_31_201151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 2018_05_31_193236) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.bigint "user_id"
-    t.integer "type"
+    t.string "overall"
+    t.string "owner_type"
+    t.bigint "owner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "overall"
-    t.index ["user_id"], name: "index_profiles_on_user_id"
+    t.index ["owner_type", "owner_id"], name: "index_profiles_on_owner_type_and_owner_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -45,5 +45,4 @@ ActiveRecord::Schema.define(version: 2018_05_31_193236) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "profiles", "users"
 end

@@ -10,4 +10,8 @@ RSpec.describe Politician, type: :model do
     it { should validate_presence_of :facebook_account }
     it { should validate_presence_of :next_election }
   end
+
+  context 'relationships' do
+    it { should have_one :profile }
+  end
 end
