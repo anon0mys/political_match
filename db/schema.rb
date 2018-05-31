@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_29_062349) do
+ActiveRecord::Schema.define(version: 2018_05_31_193236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "politicians", force: :cascade do |t|
+    t.string "name"
+    t.string "role"
+    t.string "gender"
+    t.string "party"
+    t.string "twitter_id"
+    t.string "facebook_account"
+    t.string "next_election"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "profile"
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.bigint "user_id"
