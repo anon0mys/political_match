@@ -6,9 +6,10 @@ describe TwitterService do
       let(:user) { "RepDianaDeGette" }
       subject { TwitterService.new }
 
-      it 'should return an array of strings' do
-        expect(subject.get_tweets(user)).to be_an Array
-        expect(subject.get_tweets(user).first).to be_a String
+      it 'should return a hash of tweet ids and text' do
+        expect(subject.get_tweets(user)).to be_a Hash
+        expect(subject.get_tweets(user).keys.first).to be_a String
+        expect(subject.get_tweets(user).values.first).to be_a String
       end
     end
   end

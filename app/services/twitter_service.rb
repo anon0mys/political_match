@@ -9,8 +9,10 @@ class TwitterService
   end
 
   def get_tweets(user)
-    @client.user_timeline(user).map do |tweet|
-      tweet.text
+    @client.user_timeline(user).reduce({}) do |summary, tweet|
+      id = tweet.id.to_s
+      summary[id] = tweet.text
+      summary
     end
   end
 end
