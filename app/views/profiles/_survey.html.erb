@@ -1,20 +1,39 @@
 <%= form_tag user_profiles_path(@user), {class: 'profile-form', method: :post} do %>
   <div class="form-group">
-    <%= label_tag 'question_1' %>
+    <%= label_tag 'Gun Control' %>
     <%= select_tag 'question_1',
           options_for_select(
-            ['This is a liberal response',
-              'This is a conservative response']),
+            ['gun control is bad',
+             'we should develop more social programs and restrictions',
+             'we need a balance between safety and freedom',
+             'we would get rid of them if we had a social conscience'
+             ]),
           { class: 'form-control' } %>
   </div>
 
   <div class="form-group">
-    <%= label_tag 'question_2' %>
+    <%= label_tag 'Big Business' %>
     <%= select_tag 'question_2',
           options_for_select(
-            ['This is a liberal response',
-             'This is a liberal conservative response',
-             'This is a conservative response']),
+            ['benefits the rich at the expense of the poor',
+             'pays taxes which benefit the states',
+             'creates a free market that is the central tenant of our country']),
+          { class: 'form-control' } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Government Oversight' %>
+    <%= select_tag 'question_3',
+          options_for_select(
+            ['we should have lower taxes',
+             'pays taxes which benefit the states',
+             'creates a free market that is the central tenant of our country']),
+          { class: 'form-control' } %>
+    <%= select_tag 'question_4',
+          options_for_select(
+            ['makes the poor to pay for the rich',
+             'pays taxes which benefit the states',
+             'creates a free market that is the central tenant of our country']),
           { class: 'form-control' } %>
   </div>
 
