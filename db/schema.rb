@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_31_205945) do
+ActiveRecord::Schema.define(version: 2018_06_01_185434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,14 +19,10 @@ ActiveRecord::Schema.define(version: 2018_05_31_205945) do
     t.string "first_name"
     t.string "last_name"
     t.string "title"
-    t.string "gender"
     t.string "party"
     t.string "twitter_account"
-    t.string "facebook_account"
-    t.string "next_election"
     t.string "state"
-    t.string "district"
-    t.integer "votes_with_party_pct"
+    t.integer "govtrack_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
