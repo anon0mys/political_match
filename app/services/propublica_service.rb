@@ -6,7 +6,7 @@ class PropublicaService
 
   def get_members
     response = JSON.parse(make_request.body, symbolize_names: true)
-    response[:results].first[:members]
+    parse_members(response[:results].first[:members])
   end
 
   private
@@ -15,6 +15,14 @@ class PropublicaService
     @conn.get do |req|
       req.url @url
       req.headers['X-API-Key'] = ENV['PROPUBLICA_API_KEY']
+    end
+  end
+
+  def parse_members(members)
+    keep = %i[first_name last_name title state party twitter_account govtrack_id]
+    members.reduce([]) do |results, member|
+      results << member.delete_if{|key, value| !keep.include?(key)}
+      results
     end
   end
 end
