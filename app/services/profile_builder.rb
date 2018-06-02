@@ -15,7 +15,7 @@ class ProfileBuilder
   def profile_summary(raw_results)
     raw_results.reduce(Hash.new(0)) do |summary, question|
       question.each do |key, value|
-        summary[key] += (value * ( 1.0 / raw_results.length )).round(2)
+        summary[key] += (value * ( 1.0 / raw_results.length ) * 100).round(2)
       end
       summary
     end
