@@ -10,8 +10,8 @@ namespace :politicians do
       service = PropublicaService.new(args[:congress], chamber)
       members = service.get_members
       members.each do |member|
-        if Politician.exists?(govtrack_id: member[:govtrack_id])
-          politician = Politician.find_by(govtrack_id: member[:govtrack_id])
+        if Politician.exists?(propublica_id: member[:propublica_id])
+          politician = Politician.find_by(propublica_id: member[:propublica_id])
           politician.update(member)
           puts "Updated #{politician.title} #{politician.last_name}"
         else
