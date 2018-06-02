@@ -15,7 +15,7 @@ jobs:
 
     # Service container image available at `host: localhost`
 
-      - image: postgres:9.6
+      - image: circleci/postgres-script-enhance
         environment:
           POSTGRES_USER: root
           POSTGRES_DB: political_match_test
