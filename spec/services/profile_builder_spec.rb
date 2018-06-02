@@ -11,7 +11,9 @@ describe ProfileBuilder do
     subject { ProfileBuilder.new(attributes) }
 
     it 'initializes with a service' do
-      expect(subject.service).to be_a IndicoService
+      VCR.use_cassette('indico-liberal-service') do
+        expect(subject.service).to be_a IndicoService
+      end
     end
   end
 
@@ -25,13 +27,11 @@ describe ProfileBuilder do
     subject { ProfileBuilder.new(attributes) }
 
     it 'should analyze survey answers' do
-      response = File.read('./spec/fixtures/json/mixed_survey.json')
-      stub_request(:post, 'https://apiv2.indico.io/political/batch')
-        .to_return(body: response)
+      VCR.use_cassette('indico-mixed-service') do
+        expected = { overall: "{\"Liberal\":40.42,\"Conservative\":25.68}"}
 
-      expected = { overall: "{\"Liberal\":0.46,\"Conservative\":0.26}"}
-
-      expect(subject.results).to eq(expected)
+        expect(subject.results).to eq(expected)
+      end
     end
   end
 end
