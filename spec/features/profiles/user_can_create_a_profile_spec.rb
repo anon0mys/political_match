@@ -21,8 +21,8 @@ feature 'A logged in User' do
     expect(current_path).to eq('/dashboard')
     within '.profile' do
       expect(page).to have_content('Your political types:')
-      expect(page).to have_content('Liberal: 46.0%')
-      expect(page).to have_content('Conservative: 26.0%')
+      expect(page).to have_content('Liberal: 45.56%')
+      expect(page).to have_content('Conservative: 25.68%')
     end
   end
 end

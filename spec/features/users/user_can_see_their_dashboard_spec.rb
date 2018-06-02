@@ -8,6 +8,12 @@ feature 'On the Dashboard Page' do
         question_1: 'This is a liberal response',
         question_2: 'This is a liberal response'
       }
+
+      response = File.read('./spec/fixtures/json/liberal_survey.json')
+
+      stub_request(:post, 'https://apiv2.indico.io/political/batch')
+        .to_return(body: response)
+
       builder = ProfileBuilder.new(survey)
       user.create_profile(builder.results)
 
@@ -16,7 +22,7 @@ feature 'On the Dashboard Page' do
 
       expect(page).to have_content('Political Profile:')
       expect(page).to have_content('Your political types:')
-      expect(page).to have_content('Liberal: 46.0%')
+      expect(page).to have_content('Liberal: 45.56%')
     end
   end
 end
