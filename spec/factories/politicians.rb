@@ -8,4 +8,8 @@ FactoryBot.define do
     state 'State'
     govtrack_id 101
   end
+
+  factory :politician_with_profile, parent: :politician do
+    association :profile
+  end
 end

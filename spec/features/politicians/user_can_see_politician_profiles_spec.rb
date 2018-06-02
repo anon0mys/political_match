@@ -18,7 +18,7 @@ feature 'A logged in user' do
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-      create(:politician, attributes)
+      politician = create(:politician, attributes)
       create_list(:politician, 11)
 
       visit '/politicians'
@@ -26,22 +26,53 @@ feature 'A logged in user' do
       expect(page).to have_css('.politician-card', count: 12)
 
       within first('.politician-card') do
-        expect(page).to have_content('Congressperson')
-        expect(page).to have_content('Lastname')
-        expect(page).to have_content('D')
-        expect(page).to have_content('CO')
+        expect(page).to have_content(politician.title)
+        expect(page).to have_content(politician.last_name)
+        expect(page).to have_content(politician.party)
+        expect(page).to have_content(politician.state)
       end
     end
   end
 
   context 'on a /politicians show page' do
+    let(:attributes) {
+      {
+        first_name: 'Ralph',
+        last_name: 'Abraham',
+        title: 'Representative',
+        party: 'R',
+        twitter_account: 'RepAbraham',
+        state: 'LA',
+        govtrack_id: '412630'
+      }
+    }
+
+    before(:each) do
+      user = create(:user)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+      @politician = create(:politician, attributes)
+    end
+
     scenario 'can see that politician\'s information' do
+      visit '/politicians/1'
+
+      expect(page).to have_content(@politician.title)
+      expect(page).to have_content(@politician.first_name)
+      expect(page).to have_content(@politician.last_name)
+      expect(page).to have_content(@politician.party)
+      expect(page).to have_content(@politician.state)
+
+      within '.votes-with-party' do
+        expect(page).to have_content('97.0%')
+      end
     end
 
     scenario 'can see that politician\'s political profile' do
-    end
+      new_politician = create(:politician_with_profile, attributes)
 
-    scenario 'can see that politician\'s political profile' do
+      visit '/politicians/1'
+
+      expect(page).to have_content(new_politician.profile.overall)
     end
   end
 end

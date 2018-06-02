@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :profile do
-    user nil
-    type 1
+    overall "{\"Liberal\":40.42,\"Conservative\":25.68}"
+    association :owner, factory: :user
   end
 end
