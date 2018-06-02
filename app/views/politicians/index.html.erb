@@ -1,0 +1,9 @@
+<div class="politician-cards">
+  <% @politicians.each do |politician| %>
+    <ul class="politician-card">
+      <h4><%= politician.title %> <%= politician.last_name %></h4>
+      <li><%= politician.party %></li>
+      <li><%= politician.state %></li>
+    </ul>
+  <% end %>
+</div>
