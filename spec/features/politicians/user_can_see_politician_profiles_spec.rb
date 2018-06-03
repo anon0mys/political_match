@@ -9,7 +9,8 @@ feature 'A logged in user' do
         title: 'Congressperson',
         party: 'D',
         twitter_account: 'twitterhandle',
-        state: 'CO'
+        state: 'CO',
+        propublica_id: 'A000374'
       }
     }
 
@@ -43,36 +44,42 @@ feature 'A logged in user' do
         party: 'R',
         twitter_account: 'RepAbraham',
         state: 'LA',
-        govtrack_id: '412630'
+        propublica_id: 'A000374'
       }
     }
 
     before(:each) do
       user = create(:user)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-      @politician = create(:politician, attributes)
+      @politician = create(:politician_with_profile, attributes)
     end
 
     scenario 'can see that politician\'s information' do
-      visit '/politicians/1'
+      VCR.use_cassette('propublica-member-votes-with-party') do
+        visit '/politicians/1'
 
-      expect(page).to have_content(@politician.title)
-      expect(page).to have_content(@politician.first_name)
-      expect(page).to have_content(@politician.last_name)
-      expect(page).to have_content(@politician.party)
-      expect(page).to have_content(@politician.state)
+        expect(page).to have_content(@politician.title)
+        expect(page).to have_content(@politician.first_name)
+        expect(page).to have_content(@politician.last_name)
+        expect(page).to have_content(@politician.party)
+        expect(page).to have_content(@politician.state)
 
-      within '.votes-with-party' do
-        expect(page).to have_content('97.0%')
+        within '.votes-with-party' do
+          expect(page).to have_content('97.0%')
+        end
       end
     end
 
     scenario 'can see that politician\'s political profile' do
-      new_politician = create(:politician_with_profile, attributes)
+      VCR.use_cassette('propublica-member-votes-with-party') do
+        new_politician = create(:politician_with_profile, attributes)
 
-      visit '/politicians/1'
+        visit '/politicians/1'
 
-      expect(page).to have_content(new_politician.profile.overall)
+        expected = 'Liberal: 40.42 Conservative: 25.68'
+
+        expect(page).to have_content(expected)
+      end
     end
   end
 end
