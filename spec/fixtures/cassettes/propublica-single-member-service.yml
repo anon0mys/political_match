@@ -1,0 +1,1243 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 40f453a8-6787-11e8-b341-0fdbdb0eb8f1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQqFISIAMFW5Q=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-6ee9448076d8a0d058a49e20
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5426e173edd65a7a7e49d28e75692b50.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - eQZ7geeOhZtWIaGzr5OUIbwA-SOKs0OLK5L5mgqum39F9FvHTWAbWA==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:44 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 410962ad-6787-11e8-afad-7d76917bad6c
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQsGGAoAMFRDA=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-5ca10ebc50a60114a5211af4
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d7dd12c04fd34e69d212dc8db302bfc2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 1tjBsRw0n603LqFw0jO6W3tjcrdtarv99vFMpmjwr6xIFOaSsgi1cw==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:44 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 411e4a52-6787-11e8-8218-9f83e2886e81
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQtHonIAMFh9Q=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-f837a6c401759f2c333f5e34
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 68aef80d7f290793b86c83a688a0464f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ggagtcOvkhVhrX_c2LtERF8Y9FJQLpFrC0AVEFSqK4l29JpukIiV8A==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:44 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 41337f9b-6787-11e8-ac61-5f630829e689
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQuFMwIAMFcHA=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-420f520b84505b8a913fa17b
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 88a0d5b7714dfdc4e8665b84ecf6f994.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - lS1h8arTbV7WYki2AW9JC0Hc0On7S68np0sh_xHjNpLIV4xJzr40fA==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:44 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 4149edab-6787-11e8-adcd-2b5a07aab338
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQwHBRoAMFqrQ=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-65855a2822fde68894617d48
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7fd13f5c4b32635feca1c61001387a16.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BkfsxTEAMwuHCxAIfCZnYaDmGww2xHEiaOi53JA7i-JNV2GMYf1WSw==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:44 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:44 GMT
+      X-Amzn-Requestid:
+      - 415eaea4-6787-11e8-a63d-4bb43a5c5daa
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQxFk2IAMFdJw=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c04-5d9256661905464d1fdc1d56
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 88a0d5b7714dfdc4e8665b84ecf6f994.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ZbTulCVC9DCLy3IjPEJ5O-Mmb9vyO4JCB7XXW29iRqd3zv6Ibe5zjA==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:45 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:45 GMT
+      X-Amzn-Requestid:
+      - 4173480f-6787-11e8-acf0-9ff921877907
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQzF4KIAMFoDw=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c05-1acad14f5dbc86e8b30ee033
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 151128aaed557b2a57fee6557da2431e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JPzEx3IZ1b4S3vFl5xJwLBwrMlOJ7IL0fIxqg7y9Qx7pm4F0dQc3GQ==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:45 GMT
+- request:
+    method: get
+    uri: https://api.propublica.org/congress/v1/members/A000374.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      X-Api-Key:
+      - "<PROPUBLICA_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8273'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 03 Jun 2018 23:38:45 GMT
+      X-Amzn-Requestid:
+      - 418c74d7-6787-11e8-a5da-194402c43742
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+      X-Amz-Apigw-Id:
+      - H7hQ0HpFoAMFkcw=
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      X-Amzn-Trace-Id:
+      - Root=1-5b147c05-59fed62ce96181e6776d77dc
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9106b78e193d93c4369ca72b57d1f212.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - B1-FOoXVy9JzGdkxy2Abx3KGrEW-gqQv1QZn-J8te0ZszEbSZOBxGA==
+    body:
+      encoding: UTF-8
+      string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
+        Publica Inc. All Rights Reserved.\",\n   \"results\":[\n      {\n         \"member_id\":
+        \"A000374\",\n         \n         \"first_name\": \"Ralph\",\n         \"middle_name\":
+        null,\n         \"last_name\": \"Abraham\",\n         \"suffix\": null,\n
+        \        \"date_of_birth\": \"1954-09-16\",\n         \"gender\": \"M\",\n
+        \        \"url\": \"https://abraham.house.gov\",\n         \"times_topics_url\":
+        \"\",\n         \"times_tag\": \"\",\n         \"govtrack_id\": \"412630\",\n
+        \        \"cspan_id\": \"76236\",\n         \"votesmart_id\": \"155414\",\n
+        \        \"icpsr_id\": \"21522\",\n         \"twitter_account\": \"RepAbraham\",\n
+        \        \"facebook_account\": \"CongressmanRalphAbraham\",\n         \"youtube_account\":
+        null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
+        \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
+        \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
+        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"4\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2017-01-03\",\n           \"end_date\": \"2019-01-03\",\n
+        \          \"office\": \"417 Cannon House Office Building\",\n           \"phone\":
+        \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
+        null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
+        201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
+        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 19,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Armed Services\",\n             \"code\": \"HSAS\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAS.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 27,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 13,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           {\n             \"name\": \"Conservation and Forestry\",\n             \"code\":
+        \"HSAG15\",\n             \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"General
+        Farm Commodities and Risk Management\",\n             \"code\": \"HSAG16\",\n
+        \            \"parent_committee_id\": \"HSAG\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/115/house/committees/HSAG/subcommittees/HSAG16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Military
+        Personnel\",\n             \"code\": \"HSAS02\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS02.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 7,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Emerging
+        Threats and Capabilities\",\n             \"code\": \"HSAS26\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS26.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 4,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Seapower
+        and Projection Forces\",\n             \"code\": \"HSAS28\",\n             \"parent_committee_id\":
+        \"HSAS\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSAS/subcommittees/HSAS28.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 11,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2019-01-03\"\n           },\n           {\n             \"name\":
+        \"Research and Technology\",\n             \"code\": \"HSSY15\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY15.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 5,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Space\",\n
+        \            \"code\": \"HSSY16\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY16.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
+        \            \"rank_in_party\": 9,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           },\n           {\n             \"name\": \"Oversight\",\n
+        \            \"code\": \"HSSY21\",\n             \"parent_committee_id\":
+        \"HSSY\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/115/house/committees/HSSY/subcommittees/HSSY21.json\",\n
+        \            \"side\": \"majority\",\n             \"title\": \"Chair\",\n
+        \            \"rank_in_party\": 1,\n             \"begin_date\": \"\",\n             \"end_date\":
+        \"2019-01-03\"\n           }\n           ]\n         },\n        {\n           \"congress\":
+        \"114\",\n           \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
+        \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
+        \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
+        \"H4LA05221\",\n           \"seniority\": \"2\",\n           \"district\":
+        \"5\", \"at_large\": false,\n           \"ocd_id\": \"ocd-division/country:us/state:la/cd:5\",\n
+        \          \"start_date\": \"2015-01-06\",\n           \"end_date\": \"2017-01-03\",\n
+        \          \"office\": null,\n           \"phone\": null,\n           \"fax\":
+        null,\n           \"contact_form\": null,\n           \"bills_sponsored\":
+        16,\n           \"bills_cosponsored\": 208,\n           \"missed_votes_pct\":
+        0.15,\n           \"votes_with_party_pct\": 96.52,\n           \"committees\":
+        [\n           {\n             \"name\": \"Committee on Agriculture\",\n             \"code\":
+        \"HSAG\",\n             \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSAG.json\",\n
+        \            \"rank_in_party\": 23,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Science, Space, and Technology\",\n             \"code\": \"HSSY\",\n
+        \            \"api_uri\": \"https://api.propublica.org/congress/v1/114/house/committees/HSSY.json\",\n
+        \            \"rank_in_party\": 20,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           },\n           {\n             \"name\":
+        \"Committee on Veterans' Affairs\",\n             \"code\": \"HSVR\",\n             \"api_uri\":
+        \"https://api.propublica.org/congress/v1/114/house/committees/HSVR.json\",\n
+        \            \"rank_in_party\": 10,\n             \"begin_date\": \"\",\n
+        \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
+        [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 23:38:45 GMT
+recorded_with: VCR 4.0.0

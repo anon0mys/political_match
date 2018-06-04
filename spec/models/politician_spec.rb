@@ -8,7 +8,7 @@ RSpec.describe Politician, type: :model do
     it { should validate_presence_of :party }
     it { should validate_presence_of :twitter_account }
     it { should validate_presence_of :state }
-    it { should validate_presence_of :govtrack_id }
+    it { should validate_presence_of :propublica_id }
   end
 
   context 'relationships' do
