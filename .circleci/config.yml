@@ -1,5 +1,10 @@
 version: 2
 jobs:
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: shielded-reef-35879
   build:
     parallelism: 3
     docker:
@@ -16,11 +21,6 @@ jobs:
           POSTGRES_USER: political_match
           POSTGRES_DB: political_match_test
           POSTGRES_PASSWORD: ""
-    deployment:
-      staging:
-        branch: master
-        heroku:
-          appname: shielded-reef-35879
     steps:
       - checkout
 
