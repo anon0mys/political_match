@@ -7,7 +7,7 @@ namespace :politicians do
   task :seed, [:congress] => [:environment] do |task, args|
     chambers = ['house', 'senate']
     chambers.each do |chamber|
-      service = PropublicaService.new(args[:congress], chamber)
+      service = PropublicaService.new({congress: args[:congress], chamber: chamber})
       members = service.get_members
       members.each do |member|
         if Politician.exists?(propublica_id: member[:propublica_id])
