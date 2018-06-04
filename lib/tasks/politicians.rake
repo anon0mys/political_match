@@ -1,7 +1,7 @@
 namespace :politicians do
   desc "TODO"
   task profile_update: :environment do
-    TwitterGetterJob.perform_now
+    TwitterGetterJob.perform_later
   end
 
   task :seed, [:congress] => [:environment] do |task, args|
