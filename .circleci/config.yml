@@ -1,7 +1,7 @@
 version: 2
 jobs:
   deployment:
-    staging:
+    production:
       branch: master
       heroku:
         appname: shielded-reef-35879
