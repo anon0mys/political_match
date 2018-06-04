@@ -7,7 +7,6 @@ class ProfileBuilder
 
   def results
     raw_results = @service.analyze[:results]
-    binding.pry
     {overall: profile_summary(raw_results).to_json}
   end
 

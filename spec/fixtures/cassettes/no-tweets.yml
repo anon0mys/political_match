@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=RepRobBishop
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="278ac7de0a5a1b2ca0ed1584a5c966e2",
+        oauth_signature="vHQmk4uJYWLpkHObUkWztUWz7jg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1528093090", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 04 Jun 2018 06:18:11 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Mon, 04 Jun 2018 06:18:11 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A152809309121825472; Expires=Wed, 03 Jun 2020 06:18:11 GMT; Path=/;
+        Domain=.twitter.com
+      - lang=en; Path=/
+      - personalization_id="v1_6gOSvScz6gMxZ3Rj3jtnbw=="; Expires=Wed, 03 Jun 2020
+        06:18:11 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - afaafa0440278b8e1235b54141723c93
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '898'
+      X-Rate-Limit-Reset:
+      - '1528093794'
+      X-Response-Time:
+      - '29'
+      X-Transaction:
+      - 00d604fc00686e2e
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 04 Jun 2018 06:18:11 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=RepRobBishop
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="48f130bbb45234ac8b3e8c024326408f",
+        oauth_signature="wiouXbYpsm%2F0ZuvN6%2BopeViFjQY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1528093091", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 04 Jun 2018 06:18:11 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Mon, 04 Jun 2018 06:18:11 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A152809309143938348; Expires=Wed, 03 Jun 2020 06:18:11 GMT; Path=/;
+        Domain=.twitter.com
+      - lang=en; Path=/
+      - personalization_id="v1_A87ZkJwu7xW8bKOnUwGxTg=="; Expires=Wed, 03 Jun 2020
+        06:18:11 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - fb18da2a033c0c76f479c656a5c46de5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '897'
+      X-Rate-Limit-Reset:
+      - '1528093794'
+      X-Response-Time:
+      - '28'
+      X-Transaction:
+      - 0044d22800784050
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 04 Jun 2018 06:18:11 GMT
+recorded_with: VCR 4.0.0

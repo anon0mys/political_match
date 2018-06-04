@@ -13,6 +13,14 @@ describe TwitterService do
           expect(subject.get_tweets(user).values.first).to be_a String
         end
       end
+
+      it 'should return no tweets if there are no tweets' do
+        VCR.use_cassette('no-tweets') do
+          empty_user = "RepRobBishop"
+          expect(subject.get_tweets(empty_user)).to be_a Hash
+          expect(subject.get_tweets(empty_user).values.first).to eq('No tweets')
+        end
+      end
     end
   end
 end

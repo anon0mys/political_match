@@ -9,7 +9,11 @@ class TwitterService
   end
 
   def get_tweets(user)
-    @client.user_timeline(user).reduce({}) do |summary, tweet|
+    timeline = @client.user_timeline(user)
+    if timeline.empty?
+      return {'1': 'No tweets'}
+    end
+    timeline.reduce({}) do |summary, tweet|
       id = tweet.id.to_s
       summary[id] = tweet.text
       summary
