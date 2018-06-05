@@ -1,0 +1,8 @@
+<div class="best-matches">
+  <% @matcher.best_matches.each do |match| %>
+    <ul class="best-matches-card">
+      <li><%= match.title %> <%= match.first_name %> <%= match.last_name %></li>
+      <li><%= match.overall %></li>
+    </ul>
+  <% end %>
+</div>
