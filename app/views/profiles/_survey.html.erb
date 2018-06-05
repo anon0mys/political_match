@@ -18,5 +18,17 @@
           { class: 'form-control' } %>
   </div>
 
+  <div class="form-group">
+    <%= label_tag 'Preferred Party' %>
+    <%= select_tag 'party',
+          options_for_select(
+            ['Democrat',
+             'Republican',
+             'Green',
+             'Libertarian',
+             'Other']),
+          { class: 'form-control' } %>
+  </div>
+
   <%= submit_tag 'Submit', class: 'btn btn-primary' %>
 <% end %>

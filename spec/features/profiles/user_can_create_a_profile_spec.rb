@@ -15,6 +15,7 @@ feature 'A logged in User' do
 
     select 'This is a liberal response', from: 'question_1'
     select 'This is a liberal conservative response', from: 'question_2'
+    select 'Libertarian', from: 'party'
 
     click_on 'Submit'
 

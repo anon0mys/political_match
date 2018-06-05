@@ -18,6 +18,6 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.permit(:question_1, :question_2)
+    params.permit(:question_1, :question_2, :party)
   end
 end
