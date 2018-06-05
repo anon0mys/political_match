@@ -39,10 +39,9 @@ feature 'A logged in user' do
     scenario 'can see that politician\'s political profile' do
       VCR.use_cassette('propublica-member-votes-with-party') do
         new_politician = create(:politician, attributes)
-        new_politician.create_profile(overall: {
-          'Liberal' => '40.42',
-          'Conservative' => '25.68'
-        }.to_json)
+        new_politician.create_profile(overall: { 'Liberal' => '40.42',
+                                                 'Conservative' => '25.68' }.to_json,
+                                      preferred_party: 'Democrat')
 
         visit politician_path(new_politician)
 

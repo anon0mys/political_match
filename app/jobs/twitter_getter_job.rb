@@ -6,8 +6,9 @@ class TwitterGetterJob < ApplicationJob
     twitter = TwitterService.new
     politicians.each do |politician|
       begin
-        tweets = twitter.get_tweets(politician.twitter_account)
-        builder = ProfileBuilder.new(tweets)
+        survey = twitter.get_tweets(politician.twitter_account)
+        survey[:party] = politician.party
+        builder = ProfileBuilder.new(survey)
         set_profile(politician, builder.results)
       rescue Twitter::Error::Unauthorized, Twitter::Error::NotFound, Twitter::Error::TooManyRequests => e
         puts e.message
@@ -25,10 +26,10 @@ class TwitterGetterJob < ApplicationJob
 
   def set_profile(politician, results)
     if politician.profile.nil?
-      politician.create_profile(results)
+      politician.create_profile!(results)
       puts "#{politician.title} #{politician.last_name} created"
     else
-      politician.profile.update(results)
+      politician.profile.update!(results)
       puts "#{politician.title} #{politician.last_name} updated"
     end
   end
