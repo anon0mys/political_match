@@ -13,10 +13,11 @@ describe IndicoService do
 
         response = service.analyze
         results = response[:results]
+        max = results.first.max_by {|k,v| v}
 
         expect(results).to be_an Array
         expect(results.first).to be_a Hash
-        expect(results.first.keys.first).to eq(:Liberal)
+        expect(max.first).to eq(:Liberal)
       end
     end
 
@@ -31,10 +32,11 @@ describe IndicoService do
 
         response = service.analyze
         results = response[:results]
+        max = results.first.max_by {|k,v| v}
 
         expect(results).to be_an Array
         expect(results.first).to be_a Hash
-        expect(results.first.keys.first).to eq(:Conservative)
+        expect(max.first).to eq(:Conservative)
       end
     end
   end

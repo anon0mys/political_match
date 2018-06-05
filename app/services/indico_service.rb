@@ -13,7 +13,7 @@ class IndicoService
   attr_reader :responses
 
   def request_body
-    results = { data: @responses.values, threshold: 0.25 }
+    results = { data: @responses.values }
     results.to_json
   end
 
