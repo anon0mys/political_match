@@ -2,12 +2,13 @@ class ProfileBuilder
   attr_reader :params, :service
 
   def initialize(survey)
-    @service = IndicoService.new(survey)
+    @survey = survey
+    @service = IndicoService.new(@survey)
   end
 
   def results
     raw_results = @service.analyze[:results]
-    {overall: profile_summary(raw_results).to_json}
+    {overall: profile_summary(raw_results).to_json, preferred_party: @survey[:party]}
   end
 
   private
