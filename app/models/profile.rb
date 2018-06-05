@@ -1,5 +1,5 @@
 class Profile < ApplicationRecord
-  validates_presence_of :overall, :political_type, :preferred_party,
+  validates_presence_of :overall, :preferred_party,
                         :authority_rating, :social_rating
   belongs_to :owner, polymorphic: true
   before_validation :build_profile
@@ -26,7 +26,7 @@ class Profile < ApplicationRecord
   end
 
   def set_social(survey)
-    ratio = ( survey[:Green].to_f + survey[:Liberal].to_f ) / ( survey[:Conservative].to_f + survey[:Libertarian].to_f )
+    ratio = ( survey[:Conservative].to_f + survey[:Libertarian].to_f ) / ( survey[:Green].to_f + survey[:Liberal].to_f )
     if ratio <= 1
       (ratio * 5).round(2)
     elsif ratio < 2
@@ -37,6 +37,24 @@ class Profile < ApplicationRecord
   end
 
   def set_type
-    'enum to do'
+    row = get_coord(self.social_rating)
+    column = get_coord(self.authority_rating)
+    types_map[row][column]
+  end
+
+  def get_coord(value)
+    if value > 8
+      3
+    elsif value < 3
+      1
+    else
+      2
+    end
+  end
+
+  def types_map
+    [['Collective Anarchy', 'Nuetral Anarchy', 'Lawless Isolationism'],
+     ['Social Democracy', 'Representative Democracy', 'Libertarian Republic'],
+     ['Totalitarian Democracy', 'Oligarchy', 'Totalitarian Dictatorship']]
   end
 end
