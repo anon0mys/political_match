@@ -7,10 +7,9 @@ class Profile < ApplicationRecord
   private
 
   def build_profile
-    survey = JSON.parse(overall, symbolize_names: true)
     self.overall ||= overall
-    self.authority_rating ||= set_authority(survey)
-    self.social_rating ||= set_social(survey)
+    self.authority_rating ||= set_authority(overall)
+    self.social_rating ||= set_social(overall)
     self.political_type ||= set_type
   end
 
