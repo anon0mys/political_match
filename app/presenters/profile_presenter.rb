@@ -1,4 +1,6 @@
 class ProfilePresenter
+  attr_reader :model
+  
   def initialize(model, profile)
     @model = model
     @profile = profile

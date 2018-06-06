@@ -1,5 +1,6 @@
 class MatchesController < ApplicationController
   def index
-    @matches = ProfileMatcher.new(current_user)
+    matcher = ProfileMatcher.new(current_user)
+    @political_matches = matcher.political_matches
   end
 end

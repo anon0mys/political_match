@@ -20,9 +20,9 @@ describe ProfileMatcher do
 
         matcher = ProfileMatcher.new(user)
 
-        expect(matcher.best_matches.count).to eq(3)
-        expect(matcher.best_matches.first).to be_a Politician
-        expect(matcher.best_matches.last).to be_a Politician
+        expect(matcher.political_matches.count).to eq(3)
+        expect(matcher.political_matches.first).to be_a ProfilePresenter
+        expect(matcher.political_matches.last).to be_a ProfilePresenter
       end
     end
   end
