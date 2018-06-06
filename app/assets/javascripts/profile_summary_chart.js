@@ -3,10 +3,10 @@
       google.charts.load('current', {'packages':['corechart']});
 
       // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(fetchData);
+      google.charts.setOnLoadCallback(fetchProfileData);
 
 
-      function fetchData() {
+      function fetchProfileData() {
         fetch('/api/v1/profile', { credentials: 'same-origin' })
           .then((response) => response.json())
           .then(json => {
