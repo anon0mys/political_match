@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy', as: :logout
   get '/dashboard', to: 'dashboard#show', as: :dashboard
 
+  get '/auth/twitter', as: :twitter_login
+  get '/auth/twitter/callback', to: 'twitter_sessions#create'
+
   resources :politicians, only: %i[index show]
   resources :matches, only: %i[index]
 
