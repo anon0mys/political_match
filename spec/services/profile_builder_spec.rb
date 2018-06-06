@@ -30,8 +30,11 @@ describe ProfileBuilder do
 
     it 'should analyze survey answers' do
       VCR.use_cassette('indico-mixed-service') do
-        expected = { overall: "{\"Libertarian\":15.26,\"Liberal\":34.480000000000004,\"Green\":17.55,\"Conservative\":32.71}",
-                     preferred_party: "Libertarian" }
+        expected = {:overall=>{:Libertarian=>15.26,
+                               :Liberal=>34.480000000000004,
+                               :Green=>17.55,
+                               :Conservative=>32.71},
+                    :preferred_party=>"Libertarian"}
 
         expect(subject.results).to eq(expected)
       end
