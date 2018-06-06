@@ -1,12 +1,30 @@
-<h4><%= @politician.title %></h4>
-
-<div class="information">
-  <p><%= @politician.first_name %> <%= @politician.last_name %></p>
-  <p><%= @politician.party %></p>
-  <p><%= @politician.state %></p>
-  <div class="votes-with-party">
-    <p><%= "#{@politician.votes_with_party}%" %></p>
+<main class='dashboard'>
+  <div class="welcome">
+    <h3><%= @politician.first_name %> <%= @politician.last_name %></h3>
   </div>
-</div>
 
-<%= render partial: 'profiles/summary' %>
+  <div class="summary">
+      <div class="profile-container">
+        <h4>Political Profile:</h4>
+        <% if @politician.profile.nil? %>
+          <div class="profile-create">
+            <span>This politician does not have a profile yet.</span>
+          </div>
+        <% else %>
+          <% cache create_politician_key(@politician, 'politician-profile') do %>
+            <h5><%= @politician.title %> <%= "#{@politician.last_name}'s" %> political types:</h5>
+            <p><%= @politician.party %></p>
+            <p><%= @politician.state %></p>
+            <div class="votes-with-party">
+              <p><%= "#{@politician.votes_with_party}%" %></p>
+            </div>
+            <%= render partial: 'profiles/summary' %>
+          <% end %>
+        <% end %>
+      </div>
+    <div class="overall">
+      <h4>Overall Results:</h4>
+      <div class='main-chart' id="chart_div"></div>
+    </div>
+  </div>
+</main>

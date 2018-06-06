@@ -7,7 +7,7 @@
 
 
       function fetchData() {
-        fetch('api/v1/profile', { credentials: 'same-origin' })
+        fetch('/api/v1/profile', { credentials: 'same-origin' })
           .then((response) => response.json())
           .then(json => {
             drawChart(json)
