@@ -2,8 +2,12 @@ require 'rails_helper'
 
 feature 'A user with a profile' do
   context 'can visit /matches' do
-    scenario 'and see the best matched politicians' do
+    before(:each) do
       user = create(:user_with_profile)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+    end
+
+    scenario 'and see the best matched politicians' do
       create_list(:politician_with_profile, 20)
 
       visit matches_path
