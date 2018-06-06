@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":["This is a conservative response","This is a conservative
-        response"],"threshold":0.25}'
+        response"]}'
     headers:
       User-Agent:
       - Faraday v0.15.1
@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '91'
+      - '285'
       Accept-Language:
       - en-us,en;q=0.5
       Accept-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Date:
-      - Sun, 03 Jun 2018 23:38:27 GMT
+      - Wed, 06 Jun 2018 01:06:46 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,8 +45,10 @@ http_interactions:
       - text/html; charset=UTF-8
     body:
       encoding: UTF-8
-      string: '{"results": [{"Conservative": 0.42838984727859497}, {"Conservative":
-        0.42838984727859497}]}'
+      string: '{"results": [{"Libertarian": 0.11249145865440369, "Liberal": 0.23209869861602783,
+        "Green": 0.2270200550556183, "Conservative": 0.42838984727859497}, {"Libertarian":
+        0.11249145865440369, "Liberal": 0.23209869861602783, "Green": 0.2270200550556183,
+        "Conservative": 0.42838984727859497}]}'
     http_version: 
-  recorded_at: Sun, 03 Jun 2018 23:38:27 GMT
+  recorded_at: Wed, 06 Jun 2018 01:06:46 GMT
 recorded_with: VCR 4.0.0

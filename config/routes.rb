@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show', as: :dashboard
 
   resources :politicians, only: %i[index show]
+  resources :matches, only: %i[index]
 
   resources :users, only: %i[create] do
     resources :profiles, only: %i[new create]

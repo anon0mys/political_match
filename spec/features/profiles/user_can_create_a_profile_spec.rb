@@ -2,27 +2,23 @@ require 'rails_helper'
 
 feature 'A logged in User' do
   scenario 'can create a profile' do
-    user = create(:user)
+    VCR.use_cassette('indico-profile') do
+      user = create(:user)
 
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-    response = File.read('./spec/fixtures/json/mixed_survey.json')
+      visit new_user_profile_path(user)
 
-    stub_request(:post, 'https://apiv2.indico.io/political/batch')
-      .to_return(body: response)
+      select 'This is a liberal response', from: 'question_1'
+      select 'This is a liberal conservative response', from: 'question_2'
+      select 'Libertarian', from: 'party'
 
-    visit new_user_profile_path(user)
+      click_on 'Submit'
 
-    select 'This is a liberal response', from: 'question_1'
-    select 'This is a liberal conservative response', from: 'question_2'
-
-    click_on 'Submit'
-
-    expect(current_path).to eq('/dashboard')
-    within '.profile' do
-      expect(page).to have_content('Your political types:')
-      expect(page).to have_content('Liberal: 45.56%')
-      expect(page).to have_content('Conservative: 25.68%')
+      expect(current_path).to eq('/dashboard')
+      within '.profile' do
+        expect(page).to have_content('Your political types:')
+      end
     end
   end
 end

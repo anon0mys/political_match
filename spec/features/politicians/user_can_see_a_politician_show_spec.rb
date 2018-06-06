@@ -38,13 +38,9 @@ feature 'A logged in user' do
 
     scenario 'can see that politician\'s political profile' do
       VCR.use_cassette('propublica-member-votes-with-party') do
-        new_politician = create(:politician_with_profile, attributes)
+        visit politician_path(@politician)
 
-        visit '/politicians/1'
-
-        expected = 'Liberal: 40.42 Conservative: 25.68'
-
-        expect(page).to have_content(expected)
+        expect(page).to have_css('.profile')
       end
     end
   end

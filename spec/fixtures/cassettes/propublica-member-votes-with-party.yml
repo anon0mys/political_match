@@ -27,25 +27,25 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sun, 03 Jun 2018 23:42:17 GMT
+      - Wed, 06 Jun 2018 01:06:23 GMT
       X-Amzn-Requestid:
-      - c033db81-6787-11e8-998d-652ead0da4b7
+      - d441d262-6925-11e8-9c97-5f9bdfe7abf2
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
       X-Amz-Apigw-Id:
-      - H7hyBHnzoAMFeqA=
+      - ICT-WF0IoAMF8Sg=
       Access-Control-Allow-Methods:
       - GET,OPTIONS
       X-Amzn-Trace-Id:
-      - Root=1-5b147cd9-1cde82704b2bd4c89d7c0308
+      - Root=1-5b17338f-0a9614c5c9b29826752322ba
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 4f207e8e6ea0b2fb26ac9c498a6c522c.cloudfront.net (CloudFront)
+      - 1.1 9106b78e193d93c4369ca72b57d1f212.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 2Z9Ix1un3hIaNl13uEQ1f0ofIAY9pGLM2IusILDQGZ8nFdnXPBlMqA==
+      - ppfxHDiTBtYGh-o3JSjhOMzrKH2mh8Pxu9_wzJovVefKEc5EEwQeDg==
     body:
       encoding: UTF-8
       string: "{\n   \"status\":\"OK\",\n   \"copyright\":\"Copyright (c) 2018 Pro
@@ -61,7 +61,7 @@ http_interactions:
         null,\n         \"crp_id\": \"N00036633\",\n         \"google_entity_id\":
         \"/m/012dwd7_\",\n         \"rss_url\": \"https://abraham.house.gov/rss.xml\",\n
         \        \"in_office\": true,\n         \"current_party\": \"R\",\n         \"most_recent_vote\":
-        \"2018-05-24\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
+        \"2018-06-05\",\n         \"roles\": [\n {\n           \"congress\": \"115\",\n
         \          \"chamber\": \"House\",\n           \"title\": \"Representative\",\n
         \          \"short_title\": \"Rep.\",\n           \"state\": \"LA\",\n           \"party\":
         \"R\",\n           \"leadership_role\": null,\n           \"fec_candidate_id\":
@@ -72,7 +72,7 @@ http_interactions:
         \"202-225-8490\",\n           \"fax\": \"202-225-5639\",\n           \"contact_form\":
         null,\n           \"bills_sponsored\": 6,\n           \"bills_cosponsored\":
         201,\n           \"missed_votes_pct\": 0.85,\n           \"votes_with_party_pct\":
-        97.00,\n           \"committees\": [\n           {\n             \"name\":
+        97.01,\n           \"committees\": [\n           {\n             \"name\":
         \"Committee on Agriculture\",\n             \"code\": \"HSAG\",\n             \"api_uri\":
         \"https://api.propublica.org/congress/v1/115/house/committees/HSAG.json\",\n
         \            \"side\": \"majority\",\n             \"title\": \"Member\",\n
@@ -154,5 +154,5 @@ http_interactions:
         \            \"end_date\": \"2017-01-03\"\n           }\n           ],\n           \"subcommittees\":
         [\n           ]\n         }\n       ]\n        }\n    ]\n}\n"
     http_version: 
-  recorded_at: Sun, 03 Jun 2018 23:42:17 GMT
+  recorded_at: Wed, 06 Jun 2018 01:06:23 GMT
 recorded_with: VCR 4.0.0
