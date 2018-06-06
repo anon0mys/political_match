@@ -1,5 +1,14 @@
 
 <main class='login'>
-  <h3>Log in</h3>
-  <%= render partial: 'sessions/form' %>
+  <div class="normal-login">
+    <div class="login-header">
+      <h4>Log in</h4>
+    </div>
+    <%= render partial: 'sessions/form' %>
+    <%= link_to 'sign up', sign_up_path %>
+  </div>
+
+  <div class="o-auth">
+    <p>content</p>
+  </div>
 </main>
