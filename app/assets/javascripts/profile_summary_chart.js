@@ -33,9 +33,7 @@
 
         // Set chart options
         var options = {'title':'Summary of Political Typeology',
-                       'width':400,
-                       'height':300,
-                       'pieHole': 0.4};
+                       'pieHole': 0.3};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
