@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   resources :users, only: %i[create] do
     resources :profiles, only: %i[new create]
   end
+
+  namespace :api do
+    namespace :v1 do
+      resources :matches, only: %i[index]
+    end
+  end
 end
