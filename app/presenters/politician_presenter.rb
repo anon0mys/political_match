@@ -1,8 +1,8 @@
 class PoliticianPresenter
   attr_reader :politician, :service
 
-  def initialize(politician_id)
-    @politician = Politician.find(politician_id)
+  def initialize(politician)
+    @politician = politician
     @service = PropublicaService.new({ member_id: @politician.propublica_id })
   end
 
