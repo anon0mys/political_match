@@ -30,9 +30,7 @@ feature 'A logged in user' do
         expect(page).to have_content(@politician.party)
         expect(page).to have_content(@politician.state)
 
-        within '.votes-with-party' do
-          expect(page).to have_content('97.0%')
-        end
+        expect(page).to have_content('97.0%')
       end
     end
 
