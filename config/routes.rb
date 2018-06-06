@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :matches, only: %i[index]
+      get 'profile', to: 'profile#show'
     end
   end
 end
