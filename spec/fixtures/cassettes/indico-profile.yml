@@ -5,8 +5,8 @@ http_interactions:
     uri: https://apiv2.indico.io/political/batch
     body:
       encoding: UTF-8
-      string: '{"data":["This is a conservative response","This is a conservative
-        response"]}'
+      string: '{"data":["This is a liberal response","This is a liberal conservative
+        response","Libertarian"]}'
     headers:
       User-Agent:
       - Faraday v0.15.1
@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '285'
+      - '419'
       Accept-Language:
       - en-us,en;q=0.5
       Accept-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Date:
-      - Wed, 06 Jun 2018 01:06:46 GMT
+      - Wed, 06 Jun 2018 01:23:42 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,10 +45,12 @@ http_interactions:
       - text/html; charset=UTF-8
     body:
       encoding: UTF-8
-      string: '{"results": [{"Libertarian": 0.11249145865440369, "Liberal": 0.23209869861602783,
-        "Green": 0.2270200550556183, "Conservative": 0.42838984727859497}, {"Libertarian":
-        0.11249145865440369, "Liberal": 0.23209869861602783, "Green": 0.2270200550556183,
-        "Conservative": 0.42838984727859497}]}'
+      string: '{"results": [{"Libertarian": 0.15130950510501862, "Liberal": 0.4539010226726532,
+        "Green": 0.15861085057258606, "Conservative": 0.23617865145206451}, {"Libertarian":
+        0.061833083629608154, "Liberal": 0.3544682562351227, "Green": 0.0700581967830658,
+        "Conservative": 0.5136404633522034}, {"Libertarian": 0.24480952322483063,
+        "Green": 0.297527551651001, "Liberal": 0.22599492967128754, "Conservative":
+        0.23166805505752563}]}'
     http_version: 
-  recorded_at: Wed, 06 Jun 2018 01:06:46 GMT
+  recorded_at: Wed, 06 Jun 2018 01:23:42 GMT
 recorded_with: VCR 4.0.0

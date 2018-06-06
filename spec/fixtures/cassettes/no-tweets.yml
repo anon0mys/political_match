@@ -10,9 +10,9 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/6.2.0
       Authorization:
-      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="278ac7de0a5a1b2ca0ed1584a5c966e2",
-        oauth_signature="vHQmk4uJYWLpkHObUkWztUWz7jg%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1528093090", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
+      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="0d2c4943923db29cf55ae69272f9d6cd",
+        oauth_signature="8aJBgNfwoQ5lP%2FyvJsx7QxxXEw8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1528247203", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
         oauth_version="1.0"
       Connection:
       - close
@@ -34,21 +34,21 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Mon, 04 Jun 2018 06:18:11 GMT
+      - Wed, 06 Jun 2018 01:06:43 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Mon, 04 Jun 2018 06:18:11 GMT
+      - Wed, 06 Jun 2018 01:06:43 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A152809309121825472; Expires=Wed, 03 Jun 2020 06:18:11 GMT; Path=/;
+      - guest_id=v1%3A152824720344324214; Expires=Fri, 05 Jun 2020 01:06:43 GMT; Path=/;
         Domain=.twitter.com
       - lang=en; Path=/
-      - personalization_id="v1_6gOSvScz6gMxZ3Rj3jtnbw=="; Expires=Wed, 03 Jun 2020
-        06:18:11 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_/8FwqsfbY6mFPOTlW7R0oA=="; Expires=Fri, 05 Jun 2020
+        01:06:43 GMT; Path=/; Domain=.twitter.com
       Status:
       - 200 OK
       Strict-Transport-Security:
@@ -56,7 +56,7 @@ http_interactions:
       X-Access-Level:
       - read-write
       X-Connection-Hash:
-      - afaafa0440278b8e1235b54141723c93
+      - 1c14e2fe8807658ee4939fd474655291
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -64,13 +64,13 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '900'
       X-Rate-Limit-Remaining:
-      - '898'
+      - '892'
       X-Rate-Limit-Reset:
-      - '1528093794'
+      - '1528247490'
       X-Response-Time:
-      - '29'
+      - '31'
       X-Transaction:
-      - 00d604fc00686e2e
+      - 00f8c51a00087b10
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Xss-Protection:
@@ -79,7 +79,7 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Mon, 04 Jun 2018 06:18:11 GMT
+  recorded_at: Wed, 06 Jun 2018 01:06:43 GMT
 - request:
     method: get
     uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=RepRobBishop
@@ -90,9 +90,9 @@ http_interactions:
       User-Agent:
       - TwitterRubyGem/6.2.0
       Authorization:
-      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="48f130bbb45234ac8b3e8c024326408f",
-        oauth_signature="wiouXbYpsm%2F0ZuvN6%2BopeViFjQY%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1528093091", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
+      - OAuth oauth_consumer_key="DwPmAgcU6EitWAmOaV0Y7bT7G", oauth_nonce="d45fb167b5e88cb4b6c0a0d3cc46e447",
+        oauth_signature="GbKJ3NZqo%2B61qbrk2AmoBGN%2B8TI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1528247203", oauth_token="4531817301-CYAnalSmpGmfaa2pg9j30W8JOPZjpCHqIntZWzh",
         oauth_version="1.0"
       Connection:
       - close
@@ -114,21 +114,21 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Mon, 04 Jun 2018 06:18:11 GMT
+      - Wed, 06 Jun 2018 01:06:43 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Mon, 04 Jun 2018 06:18:11 GMT
+      - Wed, 06 Jun 2018 01:06:43 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A152809309143938348; Expires=Wed, 03 Jun 2020 06:18:11 GMT; Path=/;
+      - guest_id=v1%3A152824720365270290; Expires=Fri, 05 Jun 2020 01:06:43 GMT; Path=/;
         Domain=.twitter.com
       - lang=en; Path=/
-      - personalization_id="v1_A87ZkJwu7xW8bKOnUwGxTg=="; Expires=Wed, 03 Jun 2020
-        06:18:11 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_ZaLqMSjpx8k0r9lfFAlskg=="; Expires=Fri, 05 Jun 2020
+        01:06:43 GMT; Path=/; Domain=.twitter.com
       Status:
       - 200 OK
       Strict-Transport-Security:
@@ -136,7 +136,7 @@ http_interactions:
       X-Access-Level:
       - read-write
       X-Connection-Hash:
-      - fb18da2a033c0c76f479c656a5c46de5
+      - 4d1c1cfe9bd70eb06974c77b065a8a36
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -144,13 +144,13 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '900'
       X-Rate-Limit-Remaining:
-      - '897'
+      - '891'
       X-Rate-Limit-Reset:
-      - '1528093794'
+      - '1528247490'
       X-Response-Time:
-      - '28'
+      - '29'
       X-Transaction:
-      - 0044d22800784050
+      - '009929b200c0f033'
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Xss-Protection:
@@ -159,5 +159,5 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Mon, 04 Jun 2018 06:18:11 GMT
+  recorded_at: Wed, 06 Jun 2018 01:06:43 GMT
 recorded_with: VCR 4.0.0
