@@ -5,6 +5,11 @@
     <li class="preferred_party"><%= match.preferred_party %></li>
     <li class="authority_rating"><%= match.authority_rating %></li>
     <li class="social_rating"><%= match.social_rating %></li>
-    <li class="overall"><%= match.overall %></li>
+    <li><h6>Overall Results:</h6></li>
+    <ul class="overall">
+      <% match.overall.each do |key, value| %>
+        <li><%= key %>: <%= value %></li>
+      <% end %>
+    </ul>
   </ul>
 <% end %>

@@ -1,6 +1,6 @@
 class ProfilePresenter
   attr_reader :model
-  
+
   def initialize(model, profile)
     @model = model
     @profile = profile
@@ -27,7 +27,8 @@ class ProfilePresenter
   end
 
   def overall
-    JSON.parse(@profile.overall, symbolize_names: true)
+    summary = JSON.parse(@profile.overall)
+    summary.sort_by { |_key, value| value }.reverse.to_h
   end
 
   private

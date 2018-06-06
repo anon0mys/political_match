@@ -77,7 +77,7 @@ describe ProfilePresenter do
         user = create(:user_with_profile)
         presenter = ProfilePresenter.new(user, user.profile)
 
-        expected = JSON.parse(user.profile.overall, symbolize_names: true)
+        expected = JSON.parse(user.profile.overall)
 
         expect(presenter.overall).to eq(expected)
       end
@@ -86,7 +86,7 @@ describe ProfilePresenter do
         politician = create(:politician_with_profile)
         presenter = ProfilePresenter.new(politician, politician.profile)
 
-        expected = JSON.parse(politician.profile.overall, symbolize_names: true)
+        expected = JSON.parse(politician.profile.overall)
 
         expect(presenter.overall).to eq(expected)
       end
