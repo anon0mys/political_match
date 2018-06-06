@@ -9,8 +9,4 @@
   </div>
 </div>
 
-<ul class="profile">
-    <% @politician.profile.each do |party, affiliation| %>
-      <li><%= party %>: <%= affiliation %></li>
-    <% end %>
-</ul>
+<%= render partial: 'profiles/summary' %>

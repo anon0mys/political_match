@@ -1,0 +1,15 @@
+<% @political_matches.each do |match| %>
+  <ul class="best-matches-card">
+    <li class="politician"><%= match.model.title %> <%= match.model.first_name %> <%= match.model.last_name %></li>
+    <li class="type"><%= match.political_type %></li>
+    <li class="preferred_party"><%= match.preferred_party %></li>
+    <li class="authority_rating"><%= match.authority_rating %></li>
+    <li class="social_rating"><%= match.social_rating %></li>
+    <li><h6>Overall Results:</h6></li>
+    <ul class="overall">
+      <% match.overall.each do |key, value| %>
+        <li><%= key %>: <%= value %></li>
+      <% end %>
+    </ul>
+  </ul>
+<% end %>

@@ -1,5 +1,12 @@
-<ul>
-  <% @profile.each do |key, value| %>
-    <li><%= "#{key}: #{value}%" %></li>
-  <% end %>
+<ul class="profile">
+  <li class="type"><%= @profile.political_type %></li>
+  <li class="preferred_party"><%= @profile.preferred_party %></li>
+  <li class="authority_rating"><%= @profile.authority_rating %></li>
+  <li class="social_rating"><%= @profile.social_rating %></li>
+  <li><h6>Overall Results:</h6></li>
+  <ul class="overall">
+    <% @profile.overall.each do |key, value| %>
+      <li><%= key %>: <%= value %></li>
+    <% end %>
+  </ul>
 </ul>

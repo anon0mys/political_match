@@ -11,7 +11,7 @@ feature 'On the Dashboard Page' do
 
         expect(page).to have_content('Political Profile:')
         expect(page).to have_content('Your political types:')
-        expect(page).to have_content('Liberal:')
+        expect(page).to have_css('.type')
       end
     end
   end
