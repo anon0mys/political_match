@@ -8,6 +8,8 @@ class PoliticiansController < ApplicationController
   end
 
   def show
-    @politician = PoliticianPresenter.new(params[:id])
+    member = Politician.find(params[:id])
+    @politician = PoliticianPresenter.new(member)
+    @profile = ProfilePresenter.new(member, member.profile)
   end
 end
