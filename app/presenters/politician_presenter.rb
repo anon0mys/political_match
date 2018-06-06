@@ -23,7 +23,7 @@ class PoliticianPresenter
   end
 
   def party
-    @politician.party
+    match_party[@politician.party]
   end
 
   def profile
@@ -32,5 +32,13 @@ class PoliticianPresenter
 
   def votes_with_party
     @service.get_member[:roles].first[:votes_with_party_pct].round(1)
+  end
+
+  private
+
+  def match_party
+    { 'D' => 'Democrat',
+      'R' => 'Republican',
+      'I' => 'Independent' }
   end
 end

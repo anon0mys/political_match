@@ -1,6 +1,6 @@
 <ul class="profile">
-  <li class="type"><%= @profile.political_type %></li>
-  <li class="preferred_party"><%= @profile.preferred_party %></li>
+  <li class="type">Political Type: <%= @profile.political_type %></li>
+  <li class="preferred_party">Preferred Party: <%= @profile.preferred_party %></li>
   <div class="gauge-chart" id="gauge_chart_div">
     <script>
       var authority_rating = <%= @profile.authority_rating %>;
