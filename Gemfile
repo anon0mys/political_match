@@ -43,6 +43,7 @@ gem 'twitter'
 gem 'sidekiq'
 gem 'newrelic_rpm'
 gem 'redis-rails'
+gem 'omniauth-twitter'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
