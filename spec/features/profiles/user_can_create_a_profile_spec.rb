@@ -16,7 +16,7 @@ feature 'A logged in User' do
       click_on 'Submit'
 
       expect(current_path).to eq('/dashboard')
-      within '.profile' do
+      within '.profile-container' do
         expect(page).to have_content('Your political types:')
       end
     end
