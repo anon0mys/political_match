@@ -2,23 +2,16 @@
 
 feature 'On the Dashboard Page' do
   context 'a logged in user' do
-    scenario 'can see their demographics information if they completed a profile' do
+    scenario 'can see their profile information if they completed a profile' do
       VCR.use_cassette('indico-liberal-service') do
-        user = create(:user)
-        survey = {
-          question_1: 'This is a liberal response',
-          question_2: 'This is a liberal response'
-        }
-
-        builder = ProfileBuilder.new(survey)
-        user.create_profile(builder.results)
+        user = create(:user_with_profile)
 
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
         visit '/dashboard'
 
         expect(page).to have_content('Political Profile:')
         expect(page).to have_content('Your political types:')
-        expect(page).to have_content('Liberal: 45.56%')
+        expect(page).to have_content('Liberal:')
       end
     end
   end
