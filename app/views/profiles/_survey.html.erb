@@ -1,52 +1,159 @@
 <%= form_tag user_profiles_path(@user), {class: 'profile-form', method: :post} do %>
   <div class="form-group">
-    <%= label_tag 'Gun Control' %>
+    <%= label_tag 'Government Welfare' %>
     <%= select_tag 'question_1',
           options_for_select(
-            ['gun control is bad',
-             'we should develop more social programs and restrictions',
-             'we need a balance between safety and freedom',
-             'we would get rid of them if we had a social conscience'
+            ['The government should do more to help needy Americans, even if it means going deeper into debt',
+              'The government today can\'t afford to do much more to help the needy'
              ]),
-          { class: 'form-control' } %>
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Government Waste' %>
+    <%= select_tag 'question_2',
+          options_for_select(
+            ['Government is almost always wasteful and inefficient',
+             'Government often does a better job than people give it credit for']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Foreign Policy' %>
+    <%= select_tag 'question_3',
+          options_for_select(
+            ['The best way to ensure peace is through military strength',
+             'Good diplomacy is the best way to ensure peace']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Racial Issues' %>
+    <%= select_tag 'question_4',
+          options_for_select(
+            ['Racial discrimination is the main reason why many black people can\'t get ahead these days',
+             'Blacks who can\'t get ahead in this country are mostly responsible for their own condition']),
+          { class: 'form-control', include_blank: true } %>
   </div>
 
   <div class="form-group">
     <%= label_tag 'Big Business' %>
-    <%= select_tag 'question_2',
+    <%= select_tag 'question_5',
           options_for_select(
-            ['benefits the rich at the expense of the poor',
-             'pays taxes which benefit the states',
-             'creates a free market that is the central tenant of our country']),
-          { class: 'form-control' } %>
+            ['Government regulation of business is necessary to protect the public interest',
+             'Government regulation of business usually does more harm than good']),
+          { class: 'form-control', include_blank: true } %>
   </div>
 
   <div class="form-group">
-    <%= label_tag 'Government Oversight' %>
-    <%= select_tag 'question_3',
+    <%= label_tag 'Homosexuality' %>
+    <%= select_tag 'question_6',
           options_for_select(
-            ['we should have lower taxes',
-             'pays taxes which benefit the states',
-             'creates a free market that is the central tenant of our country']),
-          { class: 'form-control' } %>
-    <%= select_tag 'question_4',
-          options_for_select(
-            ['makes the poor to pay for the rich',
-             'pays taxes which benefit the states',
-             'creates a free market that is the central tenant of our country']),
-          { class: 'form-control' } %>
+            ['Homosexuality should be accepted by society',
+             'Homosexuality should be discouraged by society']),
+          { class: 'form-control', include_blank: true } %>
   </div>
 
   <div class="form-group">
-    <%= label_tag 'Preferred Party' %>
+    <%= label_tag 'Big Business' %>
+    <%= select_tag 'question_7',
+          options_for_select(
+            ['Business corporations make too much profit',
+             'Most corporations make a fair and reasonable amount of profit']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'The Environment' %>
+    <%= select_tag 'question_8',
+          options_for_select(
+            ['Stricter environmental laws and regulations cost too many jobs and hurt the economy',
+             'Stricter environmental laws and regulations are worth the cost']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Immigration' %>
+    <%= select_tag 'question_9',
+          options_for_select(
+            ['Immigrants today strengthen our country because of their hard work and talents',
+             'Immigrants today are a burden on our country because they take our jobs, housing and health care']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Poverty and Welfare' %>
+    <%= select_tag 'question_10',
+          options_for_select(
+            ['Poor people today have it easy because they can get government benefits without doing anything in return',
+             'Poor people have hard lives because government benefits don\'t go far enough to help them live decently']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'The Economy' %>
+    <%= select_tag 'question_11',
+          options_for_select(
+            ['The economic system in this country unfairly favors powerful interests',
+             'The economic system in this country is generally fair to most Americans']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Racial Issues' %>
+    <%= select_tag 'question_12',
+          options_for_select(
+            ['Our country has made the changes needed to give blacks equal rights with whites',
+             'Our country needs to continue making changes to give blacks equal rights with whites']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Foreign Policy' %>
+    <%= select_tag 'question_13',
+          options_for_select(
+            ['It\'s best for the future of our country to be active in world affairs',
+             'We should pay less attention to problems overseas and concentrate on problems here at home']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Economic and Personal Growth' %>
+    <%= select_tag 'question_14',
+          options_for_select(
+            ['Most people who want to get ahead can make it if they\'re willing to work hard',
+             'Hard work and determination are no guarantee of success for most people']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Sexism' %>
+    <%= select_tag 'question_15',
+          options_for_select(
+            ['The obstacles that once made it harder for women than men to get ahead are now largely gone',
+             'There are still significant obstacles that make it harder for women to get ahead than men']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'Foreign Policy' %>
+    <%= select_tag 'question_16',
+          options_for_select(
+            ['In foreign policy, the U.S. should take into account the interests of its allies even if it means making compromises with them',
+             'In foreign policy, the U.S. should follow its OWN national interests even when its allies strongly disagree']),
+          { class: 'form-control', include_blank: true } %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag 'I consider myself a:' %>
     <%= select_tag 'party',
           options_for_select(
             ['Democrat',
              'Republican',
              'Green',
              'Libertarian',
-             'Other']),
-          { class: 'form-control' } %>
+             'Independent']),
+          { class: 'form-control', include_blank: true } %>
   </div>
 
   <%= submit_tag 'Submit', class: 'btn btn-primary' %>
