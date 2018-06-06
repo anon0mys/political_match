@@ -13,10 +13,10 @@
         <% else %>
           <% cache create_politician_key(@politician, 'politician-profile') do %>
             <h5><%= @politician.title %> <%= "#{@politician.last_name}'s" %> political types:</h5>
-            <p><%= @politician.party %></p>
-            <p><%= @politician.state %></p>
-            <div class="votes-with-party">
-              <p><%= "#{@politician.votes_with_party}%" %></p>
+            <div class="politician-info">
+              <p>Party: <%= @politician.party %></p>
+              <p>State: <%= @politician.state %></p>
+              <p>Votes With Party: <%= "#{@politician.votes_with_party}%" %></p>
             </div>
             <%= render partial: 'profiles/summary' %>
           <% end %>
