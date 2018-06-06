@@ -8,7 +8,7 @@ class ProfileBuilder
 
   def results
     raw_results = @service.analyze[:results]
-    {overall: profile_summary(raw_results).to_json, preferred_party: @survey[:party]}
+    {overall: profile_summary(raw_results), preferred_party: @survey[:party]}
   end
 
   private
