@@ -1,8 +1,12 @@
 <div class="best-matches">
-  <% @matcher.best_matches.each do |match| %>
+  <% @matches.best_matches.each do |match| %>
     <ul class="best-matches-card">
-      <li><%= match.title %> <%= match.first_name %> <%= match.last_name %></li>
-      <li><%= match.overall %></li>
+      <li class="politician"><%= match.title %> <%= match.first_name %> <%= match.last_name %></li>
+      <li class="type"><%= match.profile.political_type %></li>
+      <li class="preferred_party"><%= match.profile.preferred_party %></li>
+      <li class="authority_rating"><%= match.profile.authority_rating %></li>
+      <li class="social_rating"><%= match.profile.social_rating %></li>
+      <li class="overall"><%= match.profile.overall %></li>
     </ul>
   <% end %>
 </div>
