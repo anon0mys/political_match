@@ -14,7 +14,7 @@
     margin: 20px
     height: 300px
 
-    .profile
+    .profile-container
       display: flex
       flex-direction: column
       width: 40%
@@ -41,7 +41,19 @@
         padding: 10px
         border: 1px black solid
 
-  .top-candidates
-    height: 300px
+  .matches-container
+    height: 500px
     padding: 10px
     border: 1px black solid
+
+    .best-matches
+      margin-top: 5%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+
+      .best-matches-card
+        height: 300px
+        width: 300px
+        border: solid black .5px
+        overflow: hidden

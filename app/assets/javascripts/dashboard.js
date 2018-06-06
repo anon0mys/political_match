@@ -7,9 +7,9 @@ const fetchPoliticalMatches = () => {
     .then((response) => response.json())
     .then(data => {
       data.forEach(function(element) {
-        $('.best-matches').append(`
+        $('#dashboard-matches').append(`
           <ul class="best-matches-card">
-            <li class="politician"> ${element.model.title} ${element.model.first_name} ${element.model.last_name}</li>
+            <a href="/politicians/${element.model.id}">${element.model.title} ${element.model.first_name} ${element.model.last_name}</a>
             <li class="type">${element.profile.political_type}</li>
             <li class="preferred_party">${element.profile.preferred_party}</li>
             <li class="authority_rating">${element.profile.authority_rating}</li>

@@ -1,9 +1,31 @@
 .login
-  text-align: center
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  margin-top: 5%
+
+  .normal-login
+    width: 60%
+    height: 400px
+    text-align: center
+
+    .login-header
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: baseline
+
+      *
+        margin: 5px
 
   .login-form
-    margin-left: 35%
-    margin-right: 35%
+    margin-left: 15%
+    margin-right: 15%
+    margin-bottom: 5%
+    text-align: center
 
   .form-button
     margin-top: 5%
+
+  .o-auth
+    width: 40%
