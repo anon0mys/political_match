@@ -9,8 +9,22 @@ feature 'A logged in User' do
 
       visit new_user_profile_path(user)
 
-      select 'This is a liberal response', from: 'question_1'
-      select 'This is a liberal conservative response', from: 'question_2'
+      find(:select, 'question_1').first('option').select_option
+      find(:select, 'question_2').first('option').select_option
+      find(:select, 'question_3').first('option').select_option
+      find(:select, 'question_4').first('option').select_option
+      find(:select, 'question_5').first('option').select_option
+      find(:select, 'question_6').first('option').select_option
+      find(:select, 'question_8').first('option').select_option
+      find(:select, 'question_9').first('option').select_option
+      find(:select, 'question_10').first('option').select_option
+      find(:select, 'question_11').first('option').select_option
+      find(:select, 'question_12').first('option').select_option
+      find(:select, 'question_13').first('option').select_option
+      find(:select, 'question_14').first('option').select_option
+      find(:select, 'question_15').first('option').select_option
+      find(:select, 'question_16').first('option').select_option
+
       select 'Libertarian', from: 'party'
 
       click_on 'Submit'
