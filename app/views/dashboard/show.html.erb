@@ -4,17 +4,19 @@
   </div>
 
   <div class="summary">
-    <div class="profile">
-      <h4>Political Profile:</h4>
-      <% if @user.profile.nil? %>
-        <div class="profile-create">
-          <%= button_to 'Create Your Profile', new_user_profile_path(@user), method: :get %>
-        </div>
-      <% else %>
-        <h5>Your political types:</h5>
-        <%= render partial: 'profiles/summary' %>
-      <% end %>
-    </div>
+      <div class="profile">
+        <h4>Political Profile:</h4>
+        <% if @user.profile.nil? %>
+          <div class="profile-create">
+            <%= button_to 'Create Your Profile', new_user_profile_path(@user), method: :get %>
+          </div>
+        <% else %>
+          <% cache create_cache_key(current_user, 'user-profile') do %>
+            <h5>Your political types:</h5>
+            <%= render partial: 'profiles/summary' %>
+          <% end %>
+        <% end %>
+      </div>
     <div class="updates">
       <div class="news">
         <h4>Top News:</h4>
