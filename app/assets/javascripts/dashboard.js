@@ -1,5 +1,7 @@
 $(document).ready(() => {
-  fetchPoliticalMatches();
+  if(document.getElementById('dashboard-matches')) {
+    fetchPoliticalMatches();
+  }
 });
 
 const fetchPoliticalMatches = () => {
