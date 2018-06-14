@@ -24,5 +24,5 @@ const fetchPoliticianPictures = () => {
 const appendImage = (url) => {
   let string = url.split('.')[1].split('/')
   let divId = string[string.length - 1]
-  $(`#${divId}`).append(`<image src=${url}></image>`)
+  $(`#${divId}`).html(`<image src=${url}></image>`)
 }
