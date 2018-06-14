@@ -1,6 +1,7 @@
 $(document).ready(() => {
-  if(document.getElementById('dashboard-matches')) {
+  if(document.getElementsByClassName('summary')) {
     fetchPoliticalMatches();
+    fetchProfileData();
     draw_gauge_charts();
   }
 });
