@@ -1,10 +1,10 @@
 <ul class="profile">
   <li class="type">Political Type: <%= @profile.political_type %></li>
   <li class="preferred_party">Preferred Party: <%= @profile.preferred_party %></li>
-  <div class="gauge-chart" id="gauge_chart_div">
-    <script>
-      var authority_rating = <%= @profile.authority_rating %>;
-      var social_rating = <%= @profile.social_rating %>;
-    </script>
-  </div>
 </ul>
+<div class="gauge-charts">
+  <div id="auth-chart"></div>
+  <div id="soc-chart"></div>
+  <span id='authority'><%= @profile.authority_rating %></span>
+  <span id='social'><%= @profile.social_rating %></span>
+</div>

@@ -1,41 +1,33 @@
 
-      // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
+function fetchProfileData() {
+  fetch('/api/v1/profile', { credentials: 'same-origin' })
+    .then((response) => response.json())
+    .then(json => {
+      drawChart(json)
+    });
+};
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(fetchProfileData);
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart(summary) {
 
-
-      function fetchProfileData() {
-        fetch('/api/v1/profile', { credentials: 'same-origin' })
-          .then((response) => response.json())
-          .then(json => {
-            drawChart(json)
-          });
-      };
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart(summary) {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Party Affiliation');
-        data.addColumn('number', 'Percent Match');
-
-        data.addRows([
+  var chart = c3.generate({
+    bindto: '#chart_div',
+    data: {
+        columns: [
           ['Liberal', summary.Liberal],
-          ['Conservative', summary.Conservative],
           ['Libertarian', summary.Libertarian],
-          ['Green', summary.Green]
-        ]);
-
-        // Set chart options
-        var options = {'title':'Summary of Political Typeology',
-                       'pieHole': 0.3};
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
+          ['Green', summary.Green],
+          ['Conservative', summary.Conservative]
+        ],
+        type : 'donut',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+    },
+    donut: {
+        title: "Profile Breakdown"
+    }
+  });
+}
