@@ -13,11 +13,31 @@ const fetchPoliticalMatches = () => {
       data.forEach(function(element) {
         $('#dashboard-matches').append(`
           <ul class="best-matches-card">
+            <div class="politician-image" id="${element.model.propublica_id}">
+              <span class="politician-image-id">${element.model.propublica_id}</span>
+            </div>
             <a href="/politicians/${element.model.id}">${element.model.title} ${element.model.first_name} ${element.model.last_name}</a>
             <li class="type">Political Type: ${element.profile.political_type}</li>
             <li class="preferred_party">Preferred Party: ${element.profile.preferred_party}</li>
+            <div class="gauge-charts">
+              <div id="auth-chart-${element.model.id}"></div>
+              <div id="soc-chart-${element.model.id}"></div>
+            </div>
           </ul>`);
+        auth_attrs = {
+          data: element.profile.authority_rating,
+          location: `#auth-chart-${element.model.id}`,
+          title: 'Authority Affinity'
+        };
+        soc_attrs = {
+          data: element.profile.social_rating,
+          location: `#soc-chart-${element.model.id}`,
+          title: 'Social Affinity'
+        };
+        gauge_chart(auth_attrs);
+        gauge_chart(soc_attrs);
       })
+      fetchPoliticianPictures();
     });
 }
 
