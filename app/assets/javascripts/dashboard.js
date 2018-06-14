@@ -1,6 +1,7 @@
 $(document).ready(() => {
   if(document.getElementById('dashboard-matches')) {
     fetchPoliticalMatches();
+    draw_gauge_charts();
   }
 });
 
@@ -17,5 +18,19 @@ const fetchPoliticalMatches = () => {
           </ul>`);
       })
     });
-  drawGaugeChart()
+}
+
+const draw_gauge_charts = () => {
+  auth_attrs = {
+    data: parseFloat($('#authority').text()),
+    location: '#auth-chart',
+    title: 'Authority Affinity'
+  }
+  soc_attrs = {
+    data: parseFloat($('#social').text()),
+    location: '#soc-chart',
+    title: 'Social Affinity'
+  }
+  gauge_chart(auth_attrs);
+  gauge_chart(soc_attrs);
 }
