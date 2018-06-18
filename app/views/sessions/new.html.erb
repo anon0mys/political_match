@@ -1,16 +1,17 @@
 
-<main class='login'>
-  <div class="normal-login">
-    <div class="login-header">
+<main class='sign-in-form'>
+  <div class="normal-signup">
+    <div class="form-title">
       <h4>Log in</h4>
     </div>
     <%= render partial: 'sessions/form' %>
-    <%= link_to 'sign up', sign_up_path %>
   </div>
 
   <div class="o-auth">
     <div class="o-auth-buttons">
-      <%= link_to 'Sign in with Twitter', '/auth/twitter' %>
+      <%= link_to 'Sign in with Twitter', '/auth/twitter', class: 'btn btn-primary' %>
+      <span>or</span>
+      <%= link_to 'Sign Up', sign_up_path %>
     </div>
   </div>
 </main>
