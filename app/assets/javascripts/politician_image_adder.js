@@ -25,10 +25,10 @@ const appendImage = (url) => {
   let string = url.split('.')[1].split('/')
   let divId = string[string.length - 1]
   $(`#${divId}`).html(`<image src=${url}></image>`)
-  if($(`#${divId}`).parent().find('.politician-party').text().includes('R')) {
+  if($(`#${divId}`).parent().text().includes('Party: R')) {
     $(`#${divId}`).parent().find('.politician-bg-bar').css('background-color', '#af000b')
   }
-  else if($(`#${divId}`).parent().find('.politician-party').text().includes('D')) {
+  else if($(`#${divId}`).parent().text().includes('Party: D')) {
     $(`#${divId}`).parent().find('.politician-bg-bar').css('background-color', '#18263c')
   }
   else {

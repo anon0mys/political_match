@@ -13,7 +13,7 @@ const fetchPoliticalMatches = () => {
       data.forEach(function(element) {
         $('#dashboard-matches').append(`
           <div class="best-matches-card">
-            <div class="matches-bg-bar"></div>
+            <div class="politician-bg-bar"></div>
             <div class="politician-image" id="${element.model.propublica_id}">
               <span class="politician-image-id">${element.model.propublica_id}</span>
             </div>
