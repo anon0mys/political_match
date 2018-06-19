@@ -1,4 +1,7 @@
 <main class='dashboard'>
+  <div class="politician-image-show" id="<%= @politician.propublica_id %>">
+    <span class="politician-image-id"><%= @politician.propublica_id %></span>
+  </div>
   <div class="welcome">
     <h3><%= @politician.first_name %> <%= @politician.last_name %></h3>
   </div>
@@ -12,7 +15,6 @@
           </div>
         <% else %>
           <% cache create_politician_key(@politician, 'politician-profile') do %>
-            <h5><%= @politician.title %> <%= "#{@politician.last_name}'s" %> political types:</h5>
             <div class="politician-info">
               <p>Party: <%= @politician.party %></p>
               <p>State: <%= @politician.state %></p>
