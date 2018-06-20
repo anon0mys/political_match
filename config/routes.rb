@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :politicians, only: %i[index show]
   resources :matches, only: %i[index]
 
-  resources :users, only: %i[create] do
+  resources :users, only: %i[create edit update] do
     resources :profiles, only: %i[new create]
   end
 
