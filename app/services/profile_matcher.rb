@@ -28,7 +28,7 @@ class ProfileMatcher
               .where(profiles: {
                 political_type: Profile.political_types[@profile.political_type],
                 authority_rating: auth_range,
-                social_rating: soc_range 
+                social_rating: soc_range
               })
               .limit(3)
   end
