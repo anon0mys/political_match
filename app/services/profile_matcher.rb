@@ -1,4 +1,6 @@
 class ProfileMatcher
+  attr_reader :profile
+  
   def initialize(user)
     @user = user
     @profile = user.profile

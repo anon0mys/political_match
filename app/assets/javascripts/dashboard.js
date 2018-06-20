@@ -2,7 +2,7 @@ $(document).ready(() => {
   if(document.getElementsByClassName('summary')) {
     fetchPoliticalMatches();
     fetchProfileData();
-    draw_gauge_charts();
+    drawGaugeCharts();
   }
 });
 
@@ -37,14 +37,14 @@ const fetchPoliticalMatches = () => {
           location: `#soc-chart-${element.model.id}`,
           title: 'Social Affinity'
         };
-        gauge_chart(auth_attrs);
-        gauge_chart(soc_attrs);
+        gaugeChart(auth_attrs);
+        gaugeChart(soc_attrs);
       })
       fetchPoliticianPictures();
     });
 }
 
-const draw_gauge_charts = () => {
+const drawGaugeCharts = () => {
   auth_attrs = {
     data: parseFloat($('#authority').text()),
     location: '#auth-chart',
@@ -55,6 +55,6 @@ const draw_gauge_charts = () => {
     location: '#soc-chart',
     title: 'Social Affinity'
   }
-  gauge_chart(auth_attrs);
-  gauge_chart(soc_attrs);
+  gaugeChart(auth_attrs);
+  gaugeChart(soc_attrs);
 }

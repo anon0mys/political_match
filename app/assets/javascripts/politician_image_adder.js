@@ -3,8 +3,11 @@ $(document).ready(() => {
 });
 
 const fetchPoliticianPictures = () => {
-  let spans = $('.politician-image-id')
+  let spans = $('.politician-image-id').map(function(index, element) {
+    return element
+  })
   let list = Object.values(spans)
+
   let politicianIds = list.map(element => {
     if(element.innerText) {
       return element.innerText
