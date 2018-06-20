@@ -6,14 +6,20 @@
     </div>
     <ul class="matches-info">
       <a href="/politicians/<%= match.model.id %>"><%= match.model.title %> <%= match.model.first_name %> <%= match.model.last_name %></a>
-      <li class="type">Type: <%= match.political_type %></li>
-      <li class="preferred_party">Preferred Party: <%= match.preferred_party %></li>
+      <% unless match.profile.nil? %>
+        <li class="type">Type: <%= match.political_type %></li>
+        <li class="preferred_party">Preferred Party: <%= match.preferred_party %></li>
+      <% end %>
     </ul>
     <div class="gauge-charts">
-      <div id="auth-chart-<%= match.model.id %>"></div>
-      <div id="soc-chart-<%= match.model.id %>"></div>
-      <span id='authority'><%= match.authority_rating %></span>
-      <span id='social'><%= match.social_rating %></span>
+      <% unless match.profile.nil? %>
+        <div id="auth-chart-<%= match.model.id %>"></div>
+        <div id="soc-chart-<%= match.model.id %>"></div>
+        <span id='authority'><%= match.authority_rating %></span>
+        <span id='social'><%= match.social_rating %></span>
+      <% else %>
+        <p>This Politician does not have a profile yet</p>
+      <% end %>
     </div>
   </div>
 <% end %>
