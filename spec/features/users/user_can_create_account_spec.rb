@@ -6,6 +6,7 @@ feature 'A User can sign up' do
 
     fill_in 'user[name]', with: 'Test'
     fill_in 'user[email]', with: 'test@mail.com'
+    fill_in 'user[state]', with: 'CO'
     fill_in 'user[password]', with: 'password'
     fill_in 'user[password_confirmation]', with: 'password'
 

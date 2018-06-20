@@ -21,8 +21,3 @@ feature 'User visits homepage' do
     end
   end
 end
-# As a User
-# when I visit '/'
-# then I see a button to 'Sign Up'
-# and I see a link to 'Log In'
-# and I see an about section
