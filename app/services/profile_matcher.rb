@@ -1,6 +1,6 @@
 class ProfileMatcher
   attr_reader :profile
-  
+
   def initialize(user)
     @user = user
     @profile = user.profile
@@ -22,8 +22,14 @@ class ProfileMatcher
   private
 
   def best_matches
+    auth_range = ((@profile.authority_rating - 1)..(@profile.authority_rating + 1))
+    soc_range = ((@profile.social_rating - 1)..(@profile.social_rating + 1))
     Politician.joins("INNER JOIN profiles ON profiles.owner_id = politicians.id")
-              .where('profiles.political_type = ?', Profile.political_types[@profile.political_type])
+              .where(profiles: {
+                political_type: Profile.political_types[@profile.political_type],
+                authority_rating: auth_range,
+                social_rating: soc_range 
+              })
               .limit(3)
   end
 end

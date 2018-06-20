@@ -8,12 +8,13 @@ feature 'A user with a profile' do
     end
 
     scenario 'and see the best matched politicians' do
-      preferred_party = @user.profile.preferred_party
       political_type = @user.profile.political_type
+      auth_rating = @user.profile.authority_rating
+      soc_rating = @user.profile.social_rating
 
       create_list(:politician_with_profile, 20)
       4.times do
-        create(:politician, profile: create(:profile, political_type: political_type, preferred_party: preferred_party))
+        create(:politician, profile: create(:profile, political_type: political_type, authority_rating: auth_rating, social_rating: soc_rating))
       end
 
       visit matches_path
