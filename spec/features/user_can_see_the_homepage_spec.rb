@@ -15,8 +15,8 @@ feature 'User visits homepage' do
       expect(page).to have_content('About Political Match')
       within('.about-us') do
         expect(page).to have_content('Political Pairing')
-        expect(page).to have_content('Your Profile')
-        expect(page).to have_content('Real Data')
+        expect(page).to have_content('Indico Machine Learning')
+        expect(page).to have_content('Congress Twitter Feeds')
       end
     end
   end
