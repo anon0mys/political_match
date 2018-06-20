@@ -12,7 +12,7 @@ feature 'A User' do
 
       fill_in 'user[name]', with: 'Test Change'
       fill_in 'user[email]', with: 'test@mail.com'
-      fill_in 'user[state]', with: 'CO'
+      select 'Colorado', from: 'user[state]'
 
       click_on 'Update'
 
