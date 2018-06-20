@@ -20,35 +20,69 @@
     <header class='home-header'>
       <div class="logo-group">
         <div class="logo">
-          <h4>Logo</h4>
+          <%= link_to image_tag('logo'), root_path %>
         </div>
         <div class="home-log-in">
           <% if current_user %>
-            <%= link_to 'Dashboard', dashboard_path %>
+            <%= link_to 'Log Out', logout_path, method: :delete %>
           <% else %>
             <%= link_to 'Log In', login_path %>
           <% end %>
         </div>
       </div>
       <div class="center-group">
-        <h2>Political Match</h2>
-        <%= button_to 'Sign Up', sign_up_path, method: :get, class: 'btn btn-primary' %>
+        <h1>Political Match</h1>
+        <% if current_user %>
+          <%= link_to 'Dashboard', dashboard_path, class: 'btn btn-primary' %>
+        <% else %>
+          <%= button_to 'Sign Up', sign_up_path, method: :get, class: 'btn btn-primary' %>
+        <% end %>
       </div>
     </header>
 
     <div class="about-us">
-      <h3>About Political Match</h3>
-      <ul class="about-us-cards">
-        <li class="about-us-card">
+      <h2>About Political Match</h2>
+      <div class="about-us-cards-container">
+        <div class="about-us-card">
+          <%= image_tag 'indico_logo' %>
+          <h4>Indico Machine Learning</h4>
+          <p>
+            Indico Machine Learning algorithms determine the probability that text
+            aligns with different political camps. For standard users the text submitted to the
+            algorithm is a political survey. For politicians, Political Match regularly
+            analyzes each congress member's twitter feed to determine how their public
+            persona aligns with specific political ideologies.
+          </p>
+        </div>
+        <div class="about-us-card">
+          <%= image_tag 'twitter_logo' %>
+          <h4>Congress Twitter Feeds</h4>
+          <p>
+            Political Match uses twitter feeds for each member of Congress to determine
+            political ideology. By using their own social media, Political Match
+            can accurately and regularly update the political profile of members of Congress.
+          </p>
+        </div>
+        <div class="about-us-card">
+          <%= image_tag 'propublica_small_logo' %>
           <h4>Political Pairing</h4>
-        </li>
-        <li class="about-us-card">
-          <h4>Your Profile</h4>
-        </li>
-        <li class="about-us-card">
-          <h4>Real Data</h4>
-        </li>
-      </ul>
+          <p>
+            Propublica provides data on members of Congress which, when used in conjunction
+            with twitter data and Political Match algorithms, can pair you with the politicians
+            that most agree with your political views. You can also browse the entire catalogue
+            of congress to see how your profile compares with each member, or compare yourself
+            to the elected representatives in your state.
+          </p>
+        </div>
+      </div>
     </div>
+    <div class="about-profile">
+      <div class="about-profile-content">
+        <%= image_tag 'profile_builder_cycle' %>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <p>Political Match</p>
+    </footer>
   </body>
 </html>

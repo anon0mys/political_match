@@ -22,6 +22,10 @@ class PoliticianPresenter
     @politician.state
   end
 
+  def propublica_id
+    @politician.propublica_id
+  end
+
   def party
     match_party[@politician.party]
   end

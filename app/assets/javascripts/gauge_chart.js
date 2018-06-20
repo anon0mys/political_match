@@ -1,4 +1,4 @@
-const gauge_chart = (attrs) => {
+const gaugeChart = (attrs) => {
   var chart = c3.generate({
     bindto: attrs.location,
     title: {

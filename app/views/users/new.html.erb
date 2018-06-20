@@ -1,5 +1,17 @@
 
-<main class='signup'>
-  <h3>Sign up for an account</h3>
-  <%= render partial: 'users/form' %>
+<main class='sign-in-form'>
+  <div class="normal-signup">
+    <div class="form-title">
+      <h4>Sign up for an account</h4>
+    </div>
+    <%= render partial: 'users/form' %>
+  </div>
+
+  <div class="o-auth">
+    <div class="o-auth-buttons">
+      <%= link_to 'Sign in with Twitter', '/auth/twitter', class: 'btn btn-primary' %>
+      <span>or</span>
+      <%= link_to 'Login', login_path %>
+    </div>
+  </div>
 </main>

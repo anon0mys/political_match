@@ -1,12 +1,15 @@
 <div class="politician-cards">
   <% @politicians.each do |politician| %>
-    <ul class="politician-card">
+    <div class="politician-card">
+      <div class="politician-bg-bar"></div>
       <div class="politician-image" id="<%= politician.propublica_id %>">
         <span class="politician-image-id"><%= politician.propublica_id %></span>
       </div>
-      <h6><%= link_to "#{politician.title} #{politician.last_name}", politician_path(politician) %></h6>
-      <li><%= politician.party %></li>
-      <li><%= politician.state %></li>
-    </ul>
+      <%= link_to "#{politician.title} #{politician.last_name}", politician_path(politician), class: 'politician-title' %>
+      <div class="politician-info">
+        <span class="politician-party">Party: <%= politician.party %></span>
+        <span class="politician-state">State: <%= politician.state %></span>
+      </div>
+    </div>
   <% end %>
 </div>

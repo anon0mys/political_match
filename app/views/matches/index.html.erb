@@ -1,3 +1,18 @@
-<div class="best-matches">
-  <%= render partial: 'matches/best_matches' %>
-</div>
+<main class="dashboard">
+  <div class="political-matches-container">
+    <div class="matches-title">
+      <h4>Your Political Matches</h4>
+    </div>
+    <div class="best-matches">
+      <%= render partial: 'matches/best_matches' %>
+    </div>
+  </div>
+  <div class="political-matches-container">
+    <div class="matches-title">
+      <h4>Your State Politicians</h4>
+    </div>
+    <div class="best-matches">
+      <%= render partial: 'matches/state_politicians' %>
+    </div>
+  </div>
+</main>
